@@ -1,0 +1,26 @@
+# generated: seed=134 farms=5 vehicles=4 milk types=3
+SHIFT_MINUTES 159
+SPEED_KM_PER_HOUR 60
+MILK_TYPES High_quality Standard Sanitary
+
+FARMS
+# name road stop_minutes milk_per_type...
+F1 truck_only 15 0 0 26
+F2 trailer_ok 6 0 17.5 0
+F3 truck_only 10 15.5 0 7.5
+F4 trailer_ok 15 6 0 13
+F5 truck_only 8 0 0 19
+
+DISTANCES_KM
+Depot 0 37 51 37 26 54
+F1 37 0 60 55 17 63
+F2 51 60 0 17 45 3
+F3 37 55 17 0 38 19
+F4 26 17 45 38 0 48
+F5 54 63 3 19 48 0
+
+FLEET
+V1 truck 30
+V2 truck 40 50
+V3 truck 30 50 trailer 40 50
+V4 truck 20 20

@@ -1,0 +1,6 @@
+@"
+/checker
+/exact
+/gen
+/heuristic
+"@ | Set-Content .gitignore

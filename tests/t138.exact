@@ -1,0 +1,17 @@
+MILK COLLECTION PLAN
+====================
+Result        : all milk can be collected
+Vehicles used : 2 of 2
+Total time    : 204.00 minutes (3 h 24 min)
+
+Vehicle V1 (truck) - 94.00 minutes on the road (shift limit 169)
+  Route                          : Depot -> F2 -> Depot
+  Truck compartment 1 (40 q)     : empty
+  Truck compartment 2 (30 q)     : High_quality - 24.5 from F2   (24.5 of 30 q)
+  Truck compartment 3 (30 q)     : empty
+
+Vehicle V2 (truck) - 110.00 minutes on the road (shift limit 169)
+  Route                          : Depot -> F3 -> F1 -> Depot
+  Truck compartment 1 (50 q)     : High_quality - 5 from F1, 25.5 from F3   (30.5 of 50 q)
+  Truck compartment 2 (50 q)     : empty
+  Truck compartment 3 (20 q)     : High_quality - 20 from F1   (20 of 20 q)

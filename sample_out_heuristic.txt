@@ -1,0 +1,20 @@
+MILK COLLECTION PLAN
+====================
+Result        : all milk can be collected
+Vehicles used : 2 of 3
+Total time    : 499.00 minutes (8 h 19 min)
+
+Vehicle Truck_A (truck + trailer) - 232.00 minutes on the road (shift limit 480)
+  Route with trailer             : Depot -> Rossi -> Bianchi -> Romano -> Ferrari -> Depot
+  Truck compartment 1 (37.5 q)   : High_quality - 30 from Rossi, 7.5 from Bianchi   (37.5 of 37.5 q)
+  Truck compartment 2 (37.5 q)   : High_quality - 12.5 from Bianchi, 25 from Romano   (37.5 of 37.5 q)
+  Trailer compartment 1 (37.5 q) : Standard - 25 from Bianchi, 12.5 from Ferrari   (37.5 of 37.5 q)
+  Trailer compartment 2 (37.5 q) : Standard - 17.5 from Ferrari   (17.5 of 37.5 q)
+
+Vehicle Truck_B (truck) - 267.00 minutes on the road (shift limit 480)
+  Route                          : Depot -> Russo -> Greco -> Romano -> Depot
+  Truck compartment 1 (46.7 q)   : High_quality - 35 from Russo   (35 of 46.7 q)
+  Truck compartment 2 (46.7 q)   : Standard - 40 from Greco   (40 of 46.7 q)
+  Truck compartment 3 (46.7 q)   : Sanitary - 5 from Greco, 10 from Romano   (15 of 46.7 q)
+
+Not needed    : Truck_C

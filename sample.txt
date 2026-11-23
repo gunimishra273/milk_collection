@@ -1,0 +1,54 @@
+# =====================================================================
+#  MILK COLLECTION - one day's job
+#  Anything after a # is a note for people and is ignored by the program.
+#  Columns may be separated by any number of spaces.
+# =====================================================================
+
+# How long a vehicle may be out, start to finish (8 hours = 480 minutes)
+SHIFT_MINUTES        480
+
+# Average driving speed. 60 km/h means 1 km takes 1 minute.
+SPEED_KM_PER_HOUR    60
+
+# Kinds of milk that must never be mixed in one compartment (one word each)
+MILK_TYPES           High_quality  Standard  Sanitary
+
+
+FARMS
+# road:  trailer_ok = a truck pulling its trailer can get there
+#        truck_only = narrow road, the truck must leave its trailer behind
+# stop:  minutes spent at the farm (connecting hoses, pumping, paperwork)
+# milk:  quintals of each milk type waiting today (1 quintal = 100 kg)
+#
+# name     road         stop   High_quality  Standard  Sanitary
+  Rossi    trailer_ok   15     30            0         0
+  Bianchi  trailer_ok   10     20            25        0
+  Greco    truck_only   20     0             40        5
+  Russo    truck_only   15     35            0         0
+  Ferrari  trailer_ok   10     0             30        0
+  Romano   trailer_ok   12     25            0         10
+
+
+DISTANCES_KM
+# Road distance in km between every pair of places.
+# Rows and columns are in the same order: Depot first, then the farms as listed above.
+#
+#          Depot  Rossi  Bianchi  Greco  Russo  Ferrari  Romano
+  Depot     0     40     55       70     90     60       45
+  Rossi     40    0      20       45     70     50       30
+  Bianchi   55    20     0        30     55     60       40
+  Greco     70    45     30       0      25     75       60
+  Russo     90    70     55       25     0      95       80
+  Ferrari   60    50     60       75     95     0        25
+  Romano    45    30     40       60     80     25       0
+
+
+FLEET
+# One vehicle per row: its name, then the size of each compartment in quintals.
+#   truck <sizes>                  = a truck on its own
+#   truck <sizes> trailer <sizes>  = a truck that also pulls a trailer
+#
+# name       compartments
+  Truck_A    truck 37.5 37.5   trailer 37.5 37.5
+  Truck_B    truck 46.7 46.7 46.7
+  Truck_C    truck 20 20 20
