@@ -67,6 +67,10 @@ python3 ui/server.py          # then open http://127.0.0.1:8000
 - The server listens on 127.0.0.1 only and has no login. It is meant for local use.
 - The page loads its fonts (Inter, Quicksand) from Google Fonts. Without internet it still works but falls back to system fonts.
 - Developer notes are in `ui/HANDOFF.md`.
+  
+## Demo Video
+
+[Watch the Demo Video](https://drive.google.com/file/d/1HyHonp4FoW7MKm8EWgDsTz9nZ4MIiqRp/view?usp=sharing)
 
 ## The model
 
@@ -204,3 +208,10 @@ Two placement plans are built and the cheaper is kept: one vehicle taking everyt
 - There are no time windows, stochastic yields, or multi-day planning, as in the paper.
 - The heuristic gives no optimality bound. Its typing enumeration assumes up to about 8 compartments per vehicle.
 - The dashboard is a local tool: it solves one day at a time, does not save scenarios (use Export input .txt), and has no route map.
+
+
+## Team Members
+
+- Guni Mishra (24114039)
+- Omprakash Saran (24114064)
+- Rishit Dhanetwal (24114079)
